@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background: #fff7e6;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  height: 100vh;
+}
+
+.screen {
+  display: none;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
+.main-title {
+  font-size: 3rem;
+  line-height: 1.3;
+  color: #ff6b6b;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.sub-title {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ゲーム画面の手 */
+.hand-emoji {
+  font-size: 7rem;
+  margin-bottom: 20px;
+}
+
+/* 選択ボタン */
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.choice-btn {
+  padding: 20px;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.choice-emoji {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.choice-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.gu {
+  background: #ff6b6b;
+  color: white;
+}
+
+.choki {
+  background: #4dabf7;
+  color: white;
+}
+
+.pa {
+  background: #69db7c;
+  color: white;
+}
+
+/* 共通の大ボタン */
+.big-button {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  background: #ff8a65;
+  color: white;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #6c8cff;
+}
+
+/* 結果画面 */
+.result-text {
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.result-hands {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.result-box {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px 10px;
+}
+
+.result-emoji {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.result-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+.result-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* 結果画面の下の2ボタンを整える */
+.result-buttons {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.result-button {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+/* スマホで押しやすく */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
